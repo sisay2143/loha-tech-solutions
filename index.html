@@ -525,35 +525,31 @@
           </div>
 
           <div class="col-lg-6">
-            <form name="contact" netlify data-netlify="true" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                 </div>
-
+            
                 <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
-
+            
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
                 </div>
-
+            
                 <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
+            
           </div><!-- End Contact Form -->
 
         </div>
